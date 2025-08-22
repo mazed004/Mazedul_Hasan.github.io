@@ -4,124 +4,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD. Mazedul Hasan - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: #ddd;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #2c3e50;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 0.7rem;
-    }
-    a {
-      color: #2c3e50;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #2c3e50;
-      color: #fff;
-      font-size: 0.9rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>MD. Mazedul Hasan</h1>
-    <p>M.Pharm in Pharmacology | Aspiring PhD in Drug Discovery</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a researcher specializing in drug discovery, neuropharmacology, and computational pharmacology. 
-        My expertise includes molecular docking, molecular dynamics simulations, ADMET analysis, PCA, and machine learning. 
-        I aim to contribute to innovative drug discovery pipelines, particularly in neurodegeneration.
-      </p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>M.Pharm in Pharmacology</strong> – [Your University], [Year]</li>
-        <li><strong>B.Pharm</strong> – [Your University], [Year]</li>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">MD. Mazedul Hasan</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#education" class="hover:text-blue-400">Education</a></li>
+        <li><a href="#research" class="hover:text-blue-400">Research</a></li>
+        <li><a href="#publications" class="hover:text-blue-400">Publications</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section>
-      <h2>Research & Publications</h2>
-      <ul>
-        <li>Discovery of a novel KEAP1 inhibitor for neurodegeneration using virtual screening and molecular dynamics – <em>Heliyon</em>.</li>
-        <li>ML and simulation-based screening for RIPK1 inhibitors – <em>Heliyon</em>.</li>
-        <li>In vivo and in silico evaluation of <em>Nelumbo nucifera</em> extract for memory dysfunction – <em>Heliyon</em>.</li>
-      </ul>
-    </section>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">MD. Mazedul Hasan</h2>
+      <p class="text-xl">M.Pharm in Pharmacology | Researcher in Drug Discovery & Computational Pharmacology | Aspiring PhD</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Molecular Docking & Dynamics (AutoDock Vina, GROMACS)</li>
-        <li>ADMET & Pharmacokinetic Analysis</li>
-        <li>Computational Pharmacology & ML</li>
-        <li>Neuropharmacology & Natural Product Pharmacology</li>
-      </ul>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold border-b-2 border-gray-300 pb-2 mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed">
+      I am a researcher specializing in drug discovery, neuropharmacology, and computational pharmacology. My expertise includes molecular docking, molecular dynamics simulations, ADMET analysis, PCA, and machine learning. I aim to contribute to innovative drug discovery pipelines, particularly in neurodegeneration.
+    </p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>
-        <a href="#">CV</a> | 
-        <a href="#">Google Scholar</a> | 
-        <a href="#">ORCID</a> | 
-        <a href="#">ResearchGate</a> | 
-        <a href="#">LinkedIn</a>
-      </p>
-    </section>
-  </main>
+  <!-- Education -->
+  <section id="education" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold border-b-2 border-gray-300 pb-2 mb-6">Education</h2>
+      <div class="space-y-6">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold">North South University</h3>
+          <p>M.Pharm in Pharmacology and Clinical Pharmacy | Expected Aug 2025 | GPA: 3.78/4.0</p>
+          <p class="italic">Thesis: In Silico Identification of KEAP1 Inhibitors for Alzheimer’s Disease</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold">East West University</h3>
+          <p>Bachelor of Pharmacy | Feb 2022</p>
+          <p class="italic">Thesis: Lifestyle-related risk factors of cancers among young adults of Bangladesh</p>
+          <p>Award: Merit Scholarship (Top 10% of class)</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
+  <!-- Research -->
+  <section id="research" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold border-b-2 border-gray-300 pb-2 mb-6">Research Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <a href="project-keap1.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">KEAP1 & RIPK1 Inhibitor Discovery</h3>
+        <p>Virtual screening, machine learning filtering, docking, and 200ns MD simulations to identify novel inhibitors from marine natural products.</p>
+      </a>
+      <a href="project-snp.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">KEAP1 nsSNP Pathogenicity</h3>
+        <p>Bioinformatics and structural analysis of KEAP1 variants, validated by MD simulations and PCA, identifying G379D as a key contributor.</p>
+      </a>
+      <a href="project-nelumbo.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">Nelumbo nucifera Neuroprotection</h3>
+        <p>In vivo and in silico study on the neuroprotective effects of N. nucifera in aluminum chloride-induced memory dysfunction in mice.</p>
+      </a>
+      <a href="project-writing.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">Manuscript Writing</h3>
+        <p>First author of four manuscripts (3 under review, 1 submitted), lead writer of an additional manuscript in preparation.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold border-b-2 border-gray-300 pb-2 mb-6">Publications</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <a href="pub-keap1.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <h3 class="font-bold">KEAP1 inhibitor discovery</h3>
+          <p class="text-sm text-gray-600">Status: Under Review (PLOS ONE)</p>
+        </a>
+        <a href="pub-ripk1.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <h3 class="font-bold">RIPK1 inhibitors using ML & simulations</h3>
+          <p class="text-sm text-gray-600">Status: Under Review (Heliyon)</p>
+        </a>
+        <a href="pub-nelumbo.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <h3 class="font-bold">Neuroprotective role of Nelumbo nucifera</h3>
+          <p class="text-sm text-gray-600">Status: Submitted (Chemico-Biological Interactions)</p>
+        </a>
+        <a href="pub-sarcochlamys.html" class="block bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <h3 class="font-bold">Sarcochlamys pulcherrima in Alzheimer’s disease</h3>
+          <p class="text-sm text-gray-600">Status: In Preparation</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold border-b-2 border-gray-300 pb-2 mb-6">Skills</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="font-bold mb-2">Computational</h3>
+        <ul class="list-disc pl-6">
+          <li>AutoDock Vina, GROMACS</li>
+          <li>PyMOL, Chimera</li>
+          <li>ADMET, pkCSM, SwissADME</li>
+          <li>MM-PBSA, PCA, HOMO-LUMO</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="font-bold mb-2">Machine Learning</h3>
+        <ul class="list-disc pl-6">
+          <li>Python (basic ML models)</li>
+          <li>ROC, AUC, MCC interpretation</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="font-bold mb-2">Experimental</h3>
+        <ul class="list-disc pl-6">
+          <li>HPLC, UV-Vis spectroscopy</li>
+          <li>Behavioral assays (OFT, RAM)</li>
+          <li>Oxidative stress biomarkers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-900 text-white py-16 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold pb-2 mb-6">Contact</h2>
+      <p>Email: <a href="mailto:mazedul.hasan.232@northsouth.edu" class="text-blue-400">mazedul.hasan.232@northsouth.edu</a></p>
+      <div class="mt-4 space-x-4">
+        <a href="CV.pdf" download class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-lg shadow">Download CV</a>
+        <a href="#" class="hover:text-blue-400">Google Scholar</a>
+        <a href="#" class="hover:text-blue-400">ORCID</a>
+        <a href="#" class="hover:text-blue-400">ResearchGate</a>
+        <a href="#" class="hover:text-blue-400">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-4">
     © 2025 MD. Mazedul Hasan | Portfolio Website
   </footer>
 </body>
